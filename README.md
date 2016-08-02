@@ -1,6 +1,13 @@
 # bash-aliases
 List of handy bash aliases
 
+## Docker cleanup
+
+Docker volume cleanup
+```
+alias dockerclean="docker volume rm \$(docker volume ls -qf dangling=true)"
+```
+
 ## Dockerized Composer
 
 Using docker inside container to avoid package issues.
